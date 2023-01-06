@@ -25,6 +25,10 @@
   height: 100%;
 }
 
+body {
+  margin: 0;
+}
+
 h1 {
   font-size: 2rem;
   font-family: var(--secondary-font-family);

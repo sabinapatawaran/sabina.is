@@ -3,7 +3,6 @@ import styles from "./Header.module.css";
 
 const Header = () => {
     const { pathname } = useLocation();
-    console.log(pathname);
 
     const headerStyles = pathname==="/" ? `${styles["welcome-header"]}` : `${styles["other-header"]}`
 

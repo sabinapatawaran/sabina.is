@@ -1,12 +1,12 @@
 import { useLocation } from "react-router-dom";
 
 const Header = () => {
-    const location = useLocation();
-    console.log(location);
+    const { pathname } = useLocation();
+    console.log(pathname);
 
     return (
         <header>
-            <h1>sabina.is/</h1>
+            <h1>sabina.is/{pathname === "/" ? "working" : "not working"}</h1>
         </header>
     )
 }

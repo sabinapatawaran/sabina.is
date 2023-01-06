@@ -1,15 +1,37 @@
 @import-normalize;
 
-:root{
-  --main-bg-color: #F0F0F0;
-  --main-invert-bg-color: #0F0F0F;
-  --main-font-family: 'Courier New', Courier, monospace;
-  --main-font-weight: 'normal';
-  --main-font-size: 0.75rem;
-  --main-font-color: #0F0F0F;
-  --main-invert-font-color: #F0F0F0;
+@font-face {
+  font-family: "Bantayog Sans";
+  src: url("./fonts/BantayogSans-Semibold.otf");
 }
 
-html {
-  font-family: var(--main-font-family)
+:root {
+  --main-color: #0F0F0F;
+  --main-bg-color: #F0F0F0;
+  --main-font-color: #0F0F0F;
+  --main-heading-color: #0F0F0F;
+
+  --main-font-family: 'Courier New', Courier, monospace;
+  --main-font-weight: normal;
+  --main-font-size: 0.75rem;
+
+  --secondary-font-family: 'BantayogSans', Helvetica, Arial, sans-serif;
+  --secondary-font-weight: normal;
+  --secondary-font-size: 0.75rem;
+
+  font-family: var(--main-font-family);
+  background-color: var(--main-bg-color);
+
+  height: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: var(--secondary-font-family);
+}
+
+/* More link styling */
+
+* {
+  box-sizing: border-box;
 }

@@ -1,0 +1,8 @@
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+}

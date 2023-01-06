@@ -1,6 +1,8 @@
 import { useLocation } from "react-router-dom";
 import styles from "./Header.module.css";
 
+// Option: put typewriter component, put in the strings. And THEN apply the header styling to the whole header tag WRAPPING our typewriter.
+
 const Header = () => {
     const { pathname } = useLocation();
 
@@ -8,13 +10,14 @@ const Header = () => {
 
     return (
         <header>
-            <h1 className={headerStyles}>sabina.is/
+
+            {/* <h1 className={headerStyles}>sabina.is/
                 {pathname === "/" && "a-gen-z-woman-of-colour-trying-to-do-the-write-thing"}
                 {pathname === "/about" && "someone-you-should-know-about"}
                 {pathname === "/projects" && "everything-everywhere-all-at-once"}
                 {pathname === "/contact" && "keen-to-chat"}
                 {pathname === "*" && "not-sure-how-you-got-here"}
-            </h1>
+            </h1> */}
         </header>
     )
 }

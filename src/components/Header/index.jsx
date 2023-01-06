@@ -4,7 +4,7 @@ import styles from "./Header.module.css";
 const Header = () => {
     const { pathname } = useLocation();
 
-    const headerStyles = pathname==="/" ? `${styles["welcome-header"]}` : `${styles["other-header"]}`
+    const headerStyles = pathname==="/" ? `${styles["welcome-header"]} ${styles["typed-fade-out"]}` : `${styles["other-header"]} ${styles["typed-fade-out"]}`
 
     return (
         <header>

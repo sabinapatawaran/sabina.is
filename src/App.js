@@ -11,6 +11,7 @@ import "./fonts/BantayogSans-Semibold.otf";
 // basic features
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 // pages
 import Home from "./pages/home";
@@ -52,7 +53,7 @@ function App() {
           !isAckn && (<Acknowledgement />)
         } */}
       </main>
-      <Footer />
+      <Footer /> 
     </div>
   );
 }

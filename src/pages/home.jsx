@@ -2,7 +2,7 @@ const Home = () => {
     return (
         <main>
             <div>
-                <h2>sabina.is/a-gen-z-woman-of-colour-trying-to-do-the-write-thing</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo deleniti assumenda placeat animi saepe amet maiores id fugit tempora, quod nostrum aliquam sed incidunt delectus laudantium aspernatur modi deserunt illum.</p>
             </div>
         </main>
     );

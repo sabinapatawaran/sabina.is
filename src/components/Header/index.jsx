@@ -8,24 +8,31 @@ import Typed from 'react-typed';
 const Header = () => {
     const { pathname } = useLocation();
 
-    // const headerStyles = pathname==="/" ? `${styles["welcome-header"]} ${styles["typed-fade-out"]}` : `${styles["other-header"]} ${styles["typed-fade-out"]}`
-
     return (
         <header>
             <h1>
                 sabina.is/
-                <Typed
+                {pathname === "/" && <Typed
                     strings={[`trying-to-do-the-write-thing`]}
                     typeSpeed={20}
-                    backSpeed={20} />
+                    backSpeed={20} />}
+                {pathname === "/about" && <Typed
+                    strings={[`someone-you-should-know-about`]}
+                    typeSpeed={20}
+                    backSpeed={20} />}
+                {pathname === "/projects" && <Typed
+                    strings={[`a-jack-of-all-trades-mastering-some`]}
+                    typeSpeed={20}
+                    backSpeed={20} />}
+                {pathname === "/contact" && <Typed
+                    strings={[`keen-to-chat`]}
+                    typeSpeed={20}
+                    backSpeed={20} />}
+                {pathname === "*" && <Typed
+                    strings={[`not-sure-how-you-got-here`]}
+                    typeSpeed={50}
+                    backSpeed={50} />}
             </h1>
-            {/* <h1 className={headerStyles}>sabina.is/
-                {pathname === "/" && "a-gen-z-woman-of-colour-trying-to-do-the-write-thing"}
-                {pathname === "/about" && "someone-you-should-know-about"}
-                {pathname === "/projects" && "everything-everywhere-all-at-once"}
-                {pathname === "/contact" && "keen-to-chat"}
-                {pathname === "*" && "not-sure-how-you-got-here"}
-            </h1> */}
         </header>
     )
 }

@@ -34,6 +34,15 @@ h1 {
   font-family: var(--secondary-font-family);
 }
 
+section {
+  width: 100vw;
+  margin-left: 1vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);    
+}
+
 * {
   box-sizing: border-box;
 }

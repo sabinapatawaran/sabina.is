@@ -1,9 +1,10 @@
+import LinkedIn from "../assets/linkedin-logo.png";
+
 const Contact = () => {
     return (
         <section>
-            <h1>Contact</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, incidunt! Totam tempora quas delectus eum quod. Aut tenetur, eos ducimus repudiandae aliquid consequuntur ut eligendi? Tenetur voluptas tempore perferendis reprehenderit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta explicabo enim tenetur maxime unde ipsum voluptatum ut iste ex? Magnam nulla natus eveniet nam neque minima corporis reiciendis voluptatibus dolor.</p>
+            <p>Say <a href="mailto:hello@sabina.is?Subject=Hey" target="_top">hello@sabina.is</a> (Well, write, I suppose, since it'll be an email.)</p>
+            <p>Or perhaps you're more <a href="https://www.linkedin.com/in/sabinapatawaran/"><img style={{ width: `1rem`, height: `1rem` }} src={LinkedIn} alt="LinkedIn logo"/>clined to social media.</a></p>
         </section>
     );
 };

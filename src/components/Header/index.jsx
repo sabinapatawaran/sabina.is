@@ -1,4 +1,4 @@
-import { useLocation, useHistory } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import styles from "./Header.module.css";
 import Typed from 'react-typed';
 

@@ -18,7 +18,9 @@ const Header = () => {
                 {pathname === "/" && <Typed
                     strings={[`trying-to-do-the-write-thing`]}
                     typeSpeed={20}
-                    backSpeed={20} />}
+                    backSpeed={20}
+                    className={styles["test-css"]}
+                    autoInsertCss={true} />}
                 {pathname === "/about" && <Typed
                     strings={[`someone-you-should-know-about`]}
                     typeSpeed={20}
@@ -32,8 +34,8 @@ const Header = () => {
                     typeSpeed={20}
                     backSpeed={20} />}
                 {pathname !== "/" && pathname !== "/about" && pathname !== "/projects" && pathname !== "/contact" && <Typed
-                    strings={[`not-sure-how-you-got-here`]}
-                    typeSpeed={50}
+                    strings={[`not-sure-how-you-got-here...? It's actually kind of impressive.`]}
+                    typeSpeed={70}
                     backSpeed={50} />}
             </h1>
         </header>

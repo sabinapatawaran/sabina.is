@@ -1,8 +1,8 @@
 // stylesheet
 import './App.css';
 
-// react
-import { Route, Switch } from 'react-router-dom';
+// react stuff
+import { Route, Switch} from 'react-router-dom';
 // import { useState } from 'react';
 
 // fonts
@@ -29,33 +29,33 @@ function App() {
   // console.log(isAckn);
 
   return (
-    <div className="App">
-      <Header />
-      <Nav />
-      <main>
-        <Switch>
-          <Route exact path = "/">
-            <Home />
-          </Route>
-          <Route exact path = "/about">
-            <About />
-          </Route>
-          <Route exact path = "/projects">
-            <Projects />
-          </Route>
-          <Route exact path = "/contact">
-            <Contact />
-          </Route>
-          <Route path = "*">
-            <NotFound />
-          </Route>
-        </Switch>
-        {/* {
-          !isAckn && (<Acknowledgement />)
-        } */}
-      </main>
-      <Footer /> 
-    </div>
+        <div className="App">
+          <Header />
+          <Nav />
+          <main>
+            <Switch>
+              <Route exact path = "/" >
+                <Home />
+              </Route>
+              <Route exact path = "/about">
+                <About />
+              </Route>
+              <Route exact path = "/projects">
+                <Projects />
+              </Route>
+              <Route exact path = "/contact">
+                <Contact />
+              </Route>
+              <Route path = "*">
+                <NotFound />
+              </Route>
+            </Switch>
+            {/* {
+              !isAckn && (<Acknowledgement />)
+            } */}
+          </main>
+          <Footer /> 
+      </div>
   );
 }
 

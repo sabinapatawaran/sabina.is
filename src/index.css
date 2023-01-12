@@ -29,18 +29,51 @@ body {
   margin: 0;
 }
 
+header {
+  margin: 1vw;
+}
+
 h1 {
   font-size: 2rem;
   font-family: var(--secondary-font-family);
 }
 
-section {
+.nester {
+  display: flex;
   width: 100vw;
-  margin-left: 1vw;
+  /* margin: auto; */
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);    
+  transform: translate(-50%, -50%);
+  justify-content: space-evenly;
+}
+
+.subnest {
+  display: flex;
+  flex-flow: column wrap;
+  width: 40%;
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+/* used to be section but more specific */
+.standard-section {
+  width: 100vw;
+  /* margin-left: 1vw; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 1vw;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.profile {
+  width: 30vw;
 }
 
 * {

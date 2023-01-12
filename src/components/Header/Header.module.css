@@ -7,10 +7,6 @@
     transform: translate(-50%, -50%);    
 }
 
-.other-header {
-    color: blue;
-}
-
 /* Animated caret */
 .typed-cursor {
     opacity: 1;

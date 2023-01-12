@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useHistory } from "react-router-dom";
 import styles from "./Header.module.css";
 import Typed from 'react-typed';
 
@@ -7,10 +7,13 @@ import Typed from 'react-typed';
 
 const Header = () => {
     const { pathname } = useLocation();
+    // let history = useHistory();
+
+    const headerStyles = pathname==="/" ? `${styles["welcome-header"]}` : ``
 
     return (
         <header>
-            <h1>
+            <h1 className={headerStyles}>
                 sabina.is/
                 {pathname === "/" && <Typed
                     strings={[`trying-to-do-the-write-thing`]}
@@ -40,4 +43,4 @@ const Header = () => {
 export default Header;
 
 // string interpolation -> colour the 'write'
-// finalise 404
+// finalise 404. when 404 page is activated --> trigger a state, changes header?

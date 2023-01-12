@@ -31,7 +31,7 @@ const Header = () => {
                     strings={[`keen-to-chat`]}
                     typeSpeed={20}
                     backSpeed={20} />}
-                {pathname === "*" && <Typed
+                {pathname !== "/" && pathname !== "/about" && pathname !== "/projects" && pathname !== "/contact" && <Typed
                     strings={[`not-sure-how-you-got-here`]}
                     typeSpeed={50}
                     backSpeed={50} />}
